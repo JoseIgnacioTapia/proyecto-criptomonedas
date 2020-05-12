@@ -23,6 +23,10 @@ formulario.addEventListener('submit', (e) => {
         ui.mostrarMensaje('Ambos Campos son Obligatorios', 'alert bg-danger text-center');
     } else {
         // todo bien, consultar la api
+        cotizador.obtenerValores(monedaSelecionada, criptoMonedaSeleccionada)
+            .then(data => {
+                ui.mostrarResultado(data.resultado.RAW, monedaSelecionada, criptoMonedaSeleccionada);
+            })
     }
 
 });

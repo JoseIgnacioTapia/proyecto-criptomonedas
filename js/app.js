@@ -1,3 +1,4 @@
+const cotizador = new API('af69a77e819c061a473c678f693badbec59d907b353ad352433a68c7f5d30c0e');
 const ui = new Interfaz();
 
 
